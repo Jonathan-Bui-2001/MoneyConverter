@@ -17,6 +17,7 @@ To use this app, you need to:
    2.2 apiKey="<Enter your API key from step 1 here>"
 
 ----------------------**CHAT CHIT**-------------------
+
 I made this app in 3 day after along time not programm.
 I had to complete this app in just 3 days, even though I hadn’t done any programming in a while. It’s a simple app, but there were quite a few challenges, especially since I was working alone without any guidance. Right now, I’m doing a job that’s not related to programming, which honestly makes me feel a bit frustrated.
 
