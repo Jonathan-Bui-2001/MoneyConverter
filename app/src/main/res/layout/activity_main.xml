@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#181A20"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:text="MONEY CONVERTER"
+        android:textColor="#F3BA2F"
+        android:textSize="30sp" />
+    <TextView
+        android:id="@+id/text_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="Version: 0.2-beta"
+        android:textColor="#F3BA2F"
+        android:textSize="15sp" />
+
+    <!-- FORM -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="100dp"
+        android:weightSum="12">
+
+
+
+        <!-- FROM Money -->
+        <EditText
+            android:drawableStart="@drawable/icon_money_white"
+            android:id="@+id/edt_from_money_input"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:background="@drawable/border_edt"
+            android:layout_weight="9"
+            android:inputType="numberDecimal"
+            android:textColor="#EAECEF"
+            android:textColorHint="#EAECEF"
+            android:hint="Enter amount..." />
+
+        <!-- Spinner (Dropdown) -->
+        <Spinner
+            android:id="@+id/spn_from_currency"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:background="@drawable/border_spn"
+            android:layout_weight="3" />
+    </LinearLayout>
+
+    <!-- Dòng 2: EditText và Dropdown -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:weightSum="12">
+
+        <!-- EditText -->
+        <EditText
+            android:id="@+id/edt_to_money_result"
+            android:text=""
+            android:drawableStart="@drawable/icon_money_gold"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="9"
+            android:background="@drawable/border_edt_unavailable"
+            android:focusable="false"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:textColor="#EAECEF"
+            />
+
+        <!-- Spinner (Dropdown) -->
+        <Spinner
+            android:id="@+id/spn_to_currency"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:background="@drawable/border_spn"
+            android:layout_weight="3" />
+    </LinearLayout>
+
+    <!-- Exchange -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:weightSum="12">
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:visibility="gone"
+        android:indeterminate="true"
+        android:layout_centerInParent="true"
+        android:background="#80000000"/>
+    <Button
+        android:id="@+id/btn_convert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:backgroundTint="#F3BA2F"
+        android:text="Convert"
+        android:textColor="@color/black" />
+    </LinearLayout>
+
+    <!-- copy -->
+    <Button
+        android:id="@+id/btn_copy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#000000"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="16dp"
+        android:text="Copy Result" />
+
+    <!-- Credit -->
+    <TextView
+        android:id="@+id/text_credit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:text="Made by JonathanBui 2025" />
+
+
+
+
+</LinearLayout>
