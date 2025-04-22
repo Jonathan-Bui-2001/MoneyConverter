@@ -29,4 +29,6 @@ I’ll admit, ChatGPT was a huge help, but using it effectively also drained me 
 
 The feature I like the most is the warning when users are using mobile data instead of Wi-Fi. Why? Well, I just don’t want users to accidentally spend money on mobile data.
 
-The part I enjoyed the most about this project was testing for bugs. I really enjoy testing, and honestly, my attention to detail makes me pretty good at it. I handled most of the bugs, but there’s one I left in the app as an Easter egg for you. I’m not kidding, I could’ve easily fixed it by removing an unnecessary feature, but I didn’t. I could fix it, but I didn’t want to.
+The part I enjoyed the most about this project was testing for bugs. I really enjoy testing, and honestly, my attention to detail makes me pretty good at it.
+
+Thanks you.
